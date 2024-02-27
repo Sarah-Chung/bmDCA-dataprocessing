@@ -44,12 +44,10 @@ h_matrix(output_h,final_h,numSites)
 
 def e_matrix(input_file,output_file,seqLen,numSites):
     finalArr = []
-    c = np.array(finalArr)
 
     # For rows
     for i in range(seqLen): #(seqLen-2):
         arrays_list = []
-        totalArr = np.array([])
         print("Array: " + str(i))
 
         zerosArr = np.zeros((21,21*(i+1)))
